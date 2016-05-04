@@ -4,7 +4,7 @@ import MySQLdb
 
 def add_nodes():
 	nodes = set()
-	conn = MySQLdb.connect("localhost","root","anni99K","xyz")
+	conn = MySQLdb.connect("localhost","root","password","database")
 	c = conn.cursor()
 	r = c.execute("""SELECT id FROM dump""")
 	for row in c.fetchall():
