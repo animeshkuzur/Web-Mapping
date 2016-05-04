@@ -5,12 +5,12 @@ another and recording them in a database, based on a given search term/phrase. T
 program (`display.py`) also created in Python was then used to map the recorded data into a network graph and thus produce the
 final output. The search engine used was ‘Bing’.
 
-####Prerequisite
-* MySQLdb module
-* BeautifulSoup module
-* Networkx module
-* Matplotlib module
-* Requests module
+####Prerequisite Python Modules
+* MySQLdb
+* BeautifulSoup
+* Networkx
+* Matplotlib
+* Requests
 
 ####Instructions
 Before executing the python scripts, create a database named `dump` with the following attributes
