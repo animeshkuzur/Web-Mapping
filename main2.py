@@ -92,7 +92,7 @@ def add_to_db(url,from_url):
 	global id_next
 	global id_from
 	try:
-		conn = MySQLdb.connect("localhost","root","anni99K","xyz")
+		conn = MySQLdb.connect("localhost","root","password","database")
 		c = conn.cursor()
 		c.execute("""INSERT INTO dump (id,url,from_url,urlsha1) VALUES (%s,%s,%s,SHA1(%s))""",(id_next,url,from_url,url))
 		conn.commit()
