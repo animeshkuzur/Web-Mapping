@@ -14,7 +14,7 @@ final output. The search engine used was ‘Bing’.
 
 ####Instructions
 Before executing the python scripts, create a database named `dump` with the following attributes
-`CREATE TABLE dump (id INT,url VARCHAR(1000),from_url INT,urlsha1 CHAR(40),PRIMARY KEY(id))`
+`CREATE TABLE dump (id INT,url VARCHAR(1000),from_url INT,urlsha1 CHAR(40) UNIQUE,PRIMARY KEY(id))`
 
 The first program takes input as Command Line Arguments
 `main2.py <query string>`
